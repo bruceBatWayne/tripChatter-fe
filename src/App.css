@@ -1,38 +1,72 @@
-.App {
+/* Centering container on the page */
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Rancho&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Black background as in your design */
+  color: #fff; /* White text */
+  font-family: "Rancho";
+
+}
+
+.title{
+  font-size: 9em;
+  margin-bottom: 15vh; /* Push title down by 10% of the viewport height */
+  text-align: center;
+
+}
+
+
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  width: 200px; /* Adjust size as needed */
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttons {
+  margin-top: -20px; /* Move buttons closer to the title */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Rancho";
+
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  margin-top: -40px; /* Move buttons closer to the title */
+  font-size: 2em;
+
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  margin-top: -60px; /* Move buttons closer to the title */
+
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Rancho";
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.login-btn {
+  border-radius: 12px 12px 12px 12px; 
+}
+
+.signup-btn {
+  border-radius: 12px 12px 12px 12px; 
 }
